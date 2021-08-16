@@ -1,0 +1,109 @@
+h1 {
+    font-family: 'Bogart';
+    font-size: 80px;
+    line-height: 125%;
+    color: #000000;
+}
+h2 {
+    font-family: 'Bogart';
+    font-size: 50px;
+    line-height: 140%;
+    color: #000000;
+}
+h3 {
+    font-family: 'Bogart';
+    font-size: 35px;
+    line-height: 150%;
+    color: #000000;
+}
+p {
+    font-size: 16px;
+    line-height: 190%;
+    color: #000000;
+}
+
+input,
+textarea {
+    font-family: inherit;
+    display: block;
+    width: 100%;
+    padding: 15px 25px;
+    border: 1px solid $linecolor;
+    background-color: #fff;
+    border-radius: 100px;
+    outline: none;
+    transition: border-color 0.3s;
+    font-size: 14px;
+    &:focus {
+        border-color: $darkgreen;
+    }
+    &::placeholder {
+        font-weight: 500;
+        font-size: 14px;
+        color: $lightgray;
+    }
+}
+
+textarea {
+    border-radius: 25px;
+    height: 160px;
+}
+
+form button {
+    display: block;
+    background-color: $limecolor;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 114.5%;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px 0;
+    width: 100%;
+    transition: background-color 0.3s;
+    &:hover {
+        background-color: darken($limecolor, 3);
+    }
+    &:active {
+        background-color: darken($limecolor, 6);
+    }
+}
+
+.btn-accent {
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 18px 0;
+    color: #ffffff;
+    background-color: $accentcolor;
+    border-radius: 100px;
+    transition: background-color 0.3s;
+    &:hover {
+        background-color: lighten($accentcolor, 2);
+    }
+    &:active {
+        background-color: lighten($accentcolor, 4);
+    }
+}
+
+.btn-outline {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    color: $darkgreen;
+    background-color: #fff;
+    border: 1px solid #ccdedb;
+    border-radius: 100px;
+    padding: 17px 0;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    &:hover {
+        background-color: $accentcolor;
+        color: #fff;
+        border-color: transparent;
+    }
+}
