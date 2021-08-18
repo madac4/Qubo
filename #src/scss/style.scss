@@ -3,3 +3,11 @@
 @import 'icons';
 @import 'default';
 @import 'ui';
+@import 'media';
+
+@import 'home';
+
+@import './components/header.scss';
+@import './components/footer.scss';
+@import './components/stateSlider.scss';
+@import './components/videoSlider.scss';

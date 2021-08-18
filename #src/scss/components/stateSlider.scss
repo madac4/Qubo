@@ -1,0 +1,83 @@
+.page__state-slider {
+    margin-top: 45px;
+    .state-slider__body {
+        overflow-x: hidden;
+        position: relative;
+        .state-slider__slider {
+            .slider-state__body {
+                .slider-state__slide {
+                    text-align: center;
+                    img {
+                        max-width: 350px;
+                        width: 100%;
+                        height: auto;
+                        @media (max-width: $md3+px) {
+                            max-width: 300px;
+                        }
+                        @media (max-width: $md5+px) {
+                            max-width: 250px;
+                        }
+                    }
+                    a {
+                        display: inline-block;
+                        text-decoration-line: underline;
+                        color: $accentcolor;
+                        font-weight: 500;
+                        margin-top: 20px;
+                        transition: color 0.3s;
+                        &:hover {
+                            color: $limecolor;
+                        }
+                    }
+                }
+            }
+            .slider-state-controls {
+                .slider-state-controls__dots {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 90px;
+                    transform: translateY(-30px);
+                    @media (min-width: $md3+px) {
+                        display: none;
+                    }
+                }
+                &__arrows {
+                    .slider-arrow {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        z-index: 2;
+                        @media (max-width: $md3+px) {
+                            top: 93%;
+                        }
+                        &__prev {
+                            left: 0;
+                            @media (max-width: $md3+px) {
+                                left: 150px;
+                            }
+                            @media (max-width: $md4+px) {
+                                left: 50px;
+                            }
+                            @media (max-width: $md5+px) {
+                                left: 15px;
+                            }
+                        }
+                        &__next {
+                            right: 0;
+                            @media (max-width: $md3+px) {
+                                right: 150px;
+                            }
+                            @media (max-width: $md4+px) {
+                                right: 50px;
+                            }
+                            @media (max-width: $md5+px) {
+                                right: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

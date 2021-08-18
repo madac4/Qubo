@@ -26,34 +26,15 @@
 .icon-chevron:before {
     content: '\e901';
     color: #bebebe;
-}
-.icon-control-left .path1:before {
-    content: '\e902';
-    color: rgb(255, 255, 255);
-}
-.icon-control-left .path2:before {
-    content: '\e903';
-    margin-left: -1em;
-    color: rgb(249, 240, 212);
-}
-.icon-control-left .path3:before {
-    content: '\e904';
-    margin-left: -1em;
-    color: rgb(41, 65, 51);
-}
-.icon-control-right .path1:before {
-    content: '\e905';
-    color: rgb(255, 255, 255);
-}
-.icon-control-right .path2:before {
-    content: '\e906';
-    margin-left: -1em;
-    color: rgb(249, 240, 212);
-}
-.icon-control-right .path3:before {
-    content: '\e907';
-    margin-left: -1em;
-    color: rgb(41, 65, 51);
+    &.top {
+        transform: rotate(180deg);
+    }
+    &.right {
+        transform: rotate(90deg);
+    }
+    &.left {
+        transform: rotate(-90deg);
+    }
 }
 .icon-facebook:before {
     content: '\e908';

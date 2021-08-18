@@ -1,25 +1,42 @@
 h1 {
     font-family: 'Bogart';
-    font-size: 80px;
+    @include adaptiv-value('font-size', 80, 35, 1);
     line-height: 125%;
-    color: #000000;
+    color: $darkgreen;
 }
 h2 {
     font-family: 'Bogart';
-    font-size: 50px;
+    @include adaptiv-value('font-size', 50, 30, 1);
     line-height: 140%;
-    color: #000000;
+    color: $darkgreen;
 }
 h3 {
     font-family: 'Bogart';
-    font-size: 35px;
+    @include adaptiv-value('font-size', 35, 28, 1);
     line-height: 150%;
-    color: #000000;
+    color: $darkgreen;
+}
+h4 {
+    font-weight: 500;
+    @include adaptiv-value('font-size', 30, 24, 1);
+    line-height: 45px;
+    color: $darkgreen;
+}
+h5 {
+    font-weight: 600;
+    font-size: 22px;
+    color: $darkgreen;
+}
+h6 {
+    font-weight: 600;
+    line-height: 27px;
+    color: $darkgreen;
+    @include adaptiv-value('font-size', 18, 16, 1);
 }
 p {
-    font-size: 16px;
+    @include adaptiv-value('font-size', 16, 14, 1);
     line-height: 190%;
-    color: #000000;
+    color: $darkgreen;
 }
 
 input,
@@ -38,7 +55,6 @@ textarea {
         border-color: $darkgreen;
     }
     &::placeholder {
-        font-weight: 500;
         font-size: 14px;
         color: $lightgray;
     }
@@ -82,10 +98,10 @@ form button {
     border-radius: 100px;
     transition: background-color 0.3s;
     &:hover {
-        background-color: lighten($accentcolor, 2);
+        background-color: lighten($accentcolor, 4);
     }
     &:active {
-        background-color: lighten($accentcolor, 4);
+        background-color: darken($accentcolor, 2);
     }
 }
 
@@ -105,5 +121,38 @@ form button {
         background-color: $accentcolor;
         color: #fff;
         border-color: transparent;
+    }
+}
+
+.slider-arrow {
+    transition: transform 0.3s;
+    background-color: transparent;
+    &.swiper-button-disabled {
+        opacity: 0.7;
+    }
+    &:hover {
+        transform: scale(1.15);
+    }
+}
+
+.section-header {
+    h2 {
+        @include adaptiv-value('margin-bottom', 30, 15, 1);
+    }
+    p {
+        color: $graycolor;
+        line-height: 194%;
+    }
+}
+
+.slider-controls__dots {
+    .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        opacity: 1;
+        background: #9dbeaa;
+        &-active {
+            background: #49745b;
+        }
     }
 }

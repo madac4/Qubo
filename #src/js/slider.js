@@ -79,7 +79,7 @@ let sliderTemplate = new Swiper('.slider', {
     // preloadImages: false,
     // lazy: true,
     // pagination: {
-    //     el: '.slider-pagging',
+    //     el: '.slider--controls__dots',
     //     clickable: true,
     // },
     navigation:{
@@ -115,3 +115,96 @@ let sliderTemplate = new Swiper('.slider', {
         el: '.swiper-scrollbar',
     }
 })
+
+if (document.querySelector('.slider-state__body')) {
+    new Swiper('.slider-state__body', {
+        autoplay:{
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        observer: true,
+        observeParents: true,
+        slidesPerView: 3,
+        spaceBetween: 15,
+        autoHeight: true,
+        speed: 800,
+        preloadImages: false,
+        lazy: true,
+        navigation:{
+            nextEl: '.slider-state-controls__arrows .slider-arrow__next',
+            prevEl: '.slider-state-controls__arrows .slider-arrow__prev',
+        },
+        pagination: {
+            el: '.slider-state-controls__dots',
+            clickable: true,
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+        },
+    }) 
+}
+
+if (document.querySelector('.slider-video__body')) {
+    new Swiper('.slider-video__body', {
+        autoplay:{
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        observer: true,
+        observeParents: true,
+        spaceBetween: 40,
+        slidesPerView: 1,
+        autoHeight: true,
+        speed: 800,
+        preloadImages: false,
+        lazy: true,
+        navigation:{
+            nextEl: '.slider-video-controls__arrows .slider-arrow__next',
+            prevEl: '.slider-video-controls__arrows .slider-arrow__prev',
+        },
+        pagination: {
+            el: '.slider-video-controls__dots',
+            clickable: true,
+        },
+        breakpoints: {
+            992: {
+                slidesPerView: 2,
+            },
+        },
+    }) 
+}
+
+if (document.querySelector('.slider-recomandation__body')) {
+    new Swiper('.slider-recomandation__body', {
+        autoplay:{
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        observer: true,
+        observeParents: true,
+        spaceBetween: 40,
+        slidesPerView: 1,
+        autoHeight: true,
+        speed: 800,
+        preloadImages: false,
+        lazy: true,
+        navigation:{
+            nextEl: '.slider-recomandation-controls__arrows .slider-arrow__next',
+            prevEl: '.slider-recomandation-controls__arrows .slider-arrow__prev',
+        },
+        breakpoints: {
+            480: {
+                slidesPerView: 2,
+            },
+        },
+    }) 
+}
