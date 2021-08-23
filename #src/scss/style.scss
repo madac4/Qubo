@@ -4,13 +4,15 @@
 @import 'default';
 @import 'ui';
 @import 'media';
-
 @import 'home';
 @import 'specialisti';
 @import 'specialisti-single';
-
+@import 'stari';
+@import 'stari-single';
+@import 'recomandation';
 @import './components/header.scss';
 @import './components/footer.scss';
 @import './components/stateSlider.scss';
 @import './components/videoSlider.scss';
 @import './components/pageTitle.scss';
+@import './components/pagination.scss';

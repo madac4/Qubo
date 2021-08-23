@@ -27,6 +27,7 @@
         .footer-body__mascota {
             transform: translateY(130px);
             margin-top: -130px;
+            pointer-events: none;
             img {
                 max-width: 650px;
                 width: 100%;

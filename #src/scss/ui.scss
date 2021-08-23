@@ -4,36 +4,42 @@ h1 {
     line-height: 125%;
     color: $darkgreen;
 }
+
 h2 {
     font-family: 'Bogart';
     @include adaptiv-value('font-size', 50, 30, 1);
     line-height: 140%;
     color: $darkgreen;
 }
+
 h3 {
     font-family: 'Bogart';
     @include adaptiv-value('font-size', 35, 28, 1);
     line-height: 150%;
     color: $darkgreen;
 }
+
 h4 {
     font-weight: 500;
     @include adaptiv-value('font-size', 30, 24, 1);
     line-height: 45px;
     color: $darkgreen;
 }
+
 h5 {
     font-weight: 600;
     font-size: 22px;
     color: $darkgreen;
     @include adaptiv-value('font-size', 22, 16, 1);
 }
+
 h6 {
     font-weight: 600;
     line-height: 27px;
     color: $darkgreen;
     @include adaptiv-value('font-size', 18, 16, 1);
 }
+
 p {
     @include adaptiv-value('font-size', 16, 14, 1);
     line-height: 190%;
@@ -188,7 +194,7 @@ form button {
             border: none;
             padding-left: 10px;
             padding-right: 10px;
-            &:focus + .icon-chevron {
+            &:focus+.icon-chevron {
                 transform: rotate(180deg);
             }
         }
@@ -233,4 +239,17 @@ form button {
     .search-submit {
         width: 200px;
     }
+}
+
+.single-page {
+    &__container {
+        background-color: #fff;
+        box-shadow: 0px 25px 55px rgba(0, 0, 0, 0.07);
+        border-radius: 20px;
+    }
+}
+
+.color-page {
+    background-color: #e7f2f0;
+    @include adaptiv-value('padding-top', 235, 120, 1);
 }

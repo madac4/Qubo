@@ -1,0 +1,42 @@
+.stari-post {
+    padding: 80px 30px 75px 100px;
+    @media (max-width: $md2+px) {
+        padding: 30px;
+    }
+    @media (max-width: $md4+px) {
+        padding: 30px 15px;
+    }
+    &__description {
+        align-items: center;
+        img {
+            max-width: 512px;
+            width: 100%;
+            height: auto;
+        }
+        .stari-post__information {
+            max-width: 535px;
+            p {
+                margin-top: 15px;
+                color: $graycolor;
+            }
+        }
+    }
+    &__symptome {
+        margin-top: 20px;
+    }
+    &__remedii {
+        margin-top: 70px;
+        p {
+            margin-top: 25px;
+            color: $graycolor;
+        }
+    }
+}
+
+.stari-page__slider {
+    @include adaptiv-value('margin-top', 150, 80, 1);
+    @include adaptiv-value('margin-bottom', 80, 0, 1);
+    h2 {
+        text-align: center;
+    }
+}

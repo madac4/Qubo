@@ -3,6 +3,8 @@
     background-color: #fff;
     margin-top: -124px;
     box-shadow: 0px 25px 55px rgba(0, 0, 0, 0.07);
+    position: relative;
+    z-index: 4;
     @media (max-width: 1110px) {
         margin-top: -124px;
     }
@@ -136,38 +138,6 @@
                     }
                     @media (max-width: $md5+px) {
                         width: 100%;
-                    }
-                }
-            }
-        }
-    }
-    .pagination {
-        &-list {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            &__item {
-                &--prev {
-                    @include adaptiv-value('margin-right', 40, 15, 1);
-                }
-                &--next {
-                    @include adaptiv-value('margin-left', 40, 15, 1);
-                }
-                &.active {
-                    .pagination-list__page {
-                        color: $darkgreen;
-                        border-bottom: 1px solid $darkgreen;
-                    }
-                }
-                .pagination-list__page {
-                    margin-right: 10px;
-                    padding: 0 4px;
-                    color: $graycolor;
-                    transition: 0.3s;
-                    &:hover {
-                        color: $darkgreen;
-                        border-bottom: 1px solid $darkgreen;
                     }
                 }
             }
