@@ -46,10 +46,19 @@ p {
     color: $darkgreen;
 }
 
+label {
+    font-family: inherit;
+    font-size: 14px;
+    color: $darkgreen;
+}
 input,
 textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     font-family: inherit;
     display: block;
+    margin-top: 5px;
     width: 100%;
     padding: 15px 25px;
     border: 1px solid $linecolor;
@@ -69,10 +78,13 @@ textarea {
 
 textarea {
     border-radius: 25px;
-    height: 160px;
+    min-height: 160px;
+    max-height: 200px;
+    resize: none;
 }
 
 form button {
+    font-family: inherit;
     display: block;
     background-color: $limecolor;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
@@ -194,7 +206,7 @@ form button {
             border: none;
             padding-left: 10px;
             padding-right: 10px;
-            &:focus+.icon-chevron {
+            &:focus + .icon-chevron {
                 transform: rotate(180deg);
             }
         }
@@ -252,4 +264,23 @@ form button {
 .color-page {
     background-color: #e7f2f0;
     @include adaptiv-value('padding-top', 235, 120, 1);
+}
+
+.block-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 30px;
+    @media (max-width: $md4+px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    h3 {
+        max-width: 832px;
+    }
+    a {
+        min-width: 200px;
+        width: 200px;
+    }
 }

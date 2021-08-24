@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Qubo - Resurse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="img/favicon.png" size="32x32" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.0-alpha.32/swiper-bundle.min.css" integrity="sha512-xyGU5VwrDSQBptOWTSrDKXwwQEg0s3nysq75mxSesWNezlS+1VVBgQQF4wJzHIsUyT+Yw1M5v5vOqitzKSXb8w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+    @@include('components/header.html')
+
+    <main>
+        @@include('components/pageTitle.html', {"title": "Resurse", "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"})
+
+        <div class="resources-page">
+            <div class="container">
+                <div class="block-header">
+                    <h3>Resurse grafice</h3>
+                </div>
+                <div class="resources-grid">
+                    <div class="resources-grid__item">
+                        <img src="img/grafic1.jpg" alt="grafic">
+                    </div>
+                    <div class="resources-grid__item">
+                        <img src="img/grafic2.jpg" alt="grafic">
+                    </div>
+                    <div class="resources-grid__item">
+                        <img src="img/grafic3.jpg" alt="grafic">
+                    </div>
+                    <div class="resources-grid__item">
+                        <img src="img/grafic4.jpg" alt="grafic">
+                    </div>
+                    <div class="resources-grid__item">
+                        <img src="img/grafic3.jpg" alt="grafic">
+                    </div>
+                    <div class="resources-grid__item">
+                        <img src="img/grafic2.jpg" alt="grafic">
+                    </div>
+                    <div class="resources-grid__item">
+                        <img src="img/grafic1.jpg" alt="grafic">
+                    </div>
+                    <div class="resources-grid__item">
+                        <img src="img/grafic4.jpg" alt="grafic">
+                    </div>
+                    <div class="resources-grid__item">
+                        <img src="img/grafic3.jpg" alt="grafic">
+                    </div>
+                </div>
+            </div>
+            @@include('components/pagination.html')
+        </div>
+
+
+    </main>
+
+    @@include('components/footer.html')
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.0-alpha.32/swiper-bundle.min.js" integrity="sha512-MD6GpAIaTlkwL/QmIlZiUxTK+Zb6T8sg+5CBaimCCwIIxOAebAVTGy3NUyJgYLVwjasLYMEzNMQpeB9XISr8vA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+</body>
+            
+</html>

@@ -61,61 +61,6 @@ if(sliderScollItems.length > 0){
 
 function sliders_bild_callback(params) {}
 
-let sliderTemplate = new Swiper('.slider', {
-    // effect: 'fade',
-    // autoplay:{
-    //     delay: 3000,
-    //     disableOnInteraction: false,
-    // }
-
-    observer: true,
-    observeParents: true,
-    slidesPerView: 1,
-    spaceBetween: 0,
-    autoHeight: true,
-    speed: 800,
-    // touchRatio: 0,
-    // simulateTouch: false,
-    // loop: true,
-    // preloadImages: false,
-    // lazy: true,
-    // pagination: {
-    //     el: '.slider--controls__dots',
-    //     clickable: true,
-    // },
-    navigation:{
-        nextEl: '.swiper-next',
-        prevEl: '.swiper-prev',
-    },
-
-    // breakpoints: {
-    //     320: {
-    //         slidesPerView: 1,
-    //         spaceBetween: 0,
-    //         autoHeight: true,
-    //     },
-    //     768: {
-    //         slidesPerView: 2,
-    //         spaceBetween: 20,
-    //     },
-    //     992: {
-    //         slidesPerView: 3,
-    //         spaceBetween: 20,
-    //     },
-    //     1268: {
-    //         slidesPerView: 4,
-    //         spaceBetween: 30,
-    //     },
-    // },
-    on: {
-        lazyImageReady: function () {
-            ibg();
-        },
-    },
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    }
-})
 
 if (document.querySelector('.slider-state__body')) {
     new Swiper('.slider-state__body', {
@@ -385,3 +330,23 @@ if (mobileSearch) {
     }
 }
 
+
+const overlay = document.querySelector('.overlay');
+const storyPopup = document.querySelector('.story-popup');
+const writeStory = document.querySelectorAll('.write-story');
+
+if (storyPopup) {
+    writeStory.forEach(btn =>{
+        btn.addEventListener('click', () =>{
+            overlay.classList.add('open')
+            storyPopup.classList.add('open')
+            document.body.classList.add('lock')
+        })
+    })
+    
+    overlay.addEventListener('click', () =>{
+        overlay.classList.remove('open')
+            storyPopup.classList.remove('open')
+            document.body.classList.remove('lock')
+    })
+}

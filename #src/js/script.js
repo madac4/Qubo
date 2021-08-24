@@ -144,3 +144,23 @@ if (mobileSearch) {
     }
 }
 
+
+const overlay = document.querySelector('.overlay');
+const storyPopup = document.querySelector('.story-popup');
+const writeStory = document.querySelectorAll('.write-story');
+
+if (storyPopup) {
+    writeStory.forEach(btn =>{
+        btn.addEventListener('click', () =>{
+            overlay.classList.add('open')
+            storyPopup.classList.add('open')
+            document.body.classList.add('lock')
+        })
+    })
+    
+    overlay.addEventListener('click', () =>{
+        overlay.classList.remove('open')
+            storyPopup.classList.remove('open')
+            document.body.classList.remove('lock')
+    })
+}

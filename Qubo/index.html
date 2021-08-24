@@ -38,10 +38,10 @@
                     <a href="../specialisti.html" class="header-navbar__link">Specialiști</a>
                 </li>
                 <li class="header-navbar__item">
-                    <a href="#" class="header-navbar__link">Istorii</a>
+                    <a href="../story.html" class="header-navbar__link">Istorii</a>
                 </li>
                 <li class="header-navbar__item">
-                    <a href="#" class="header-navbar__link">Resurse</a>
+                    <a href="../resources.html" class="header-navbar__link">Resurse</a>
                 </li>
             </ul>
         </nav>
@@ -322,7 +322,7 @@
                     </div>
                     <div class="story-section__navigation">
                         <a href="#" class="btn-outline read-more">Citeste mai mult</a>
-                        <a href="#" class="btn-accent write-story">Spune-ne povestea ta</a>
+                        <button class="btn-accent write-story">Spune-ne povestea ta</button>
                     </div>
                 </div>
             </div>
@@ -421,6 +421,31 @@
                 </div>
             </div>
         </section>
+
+        <div class="overlay"></div>
+
+<div class="story-popup">
+    <h3>Spune-mi povestea ta</h3>
+    <form action="#" class="story-form">
+        <label for="name">
+            Cum te pot numi?
+            <input type="text" id="name" placeholder="Scrie-ti nume sau nickname DVS">
+        </label>
+        <label for="phone">
+            Telefon
+            <input type="tel" id="phone" placeholder="Scrie-ti numarul DVS">
+        </label>
+        <label for="email">
+            E-mail
+            <input type="email" id="email" placeholder="Scrie-ti email DVS">
+        </label>
+        <label for="message">
+            Istoria
+            <textarea name="message" id="message" placeholder="Scrie istoria ta"></textarea>
+        </label>
+        <button type="submit">Aplica</button>
+    </form>
+</div>
     </main>
 
     <footer class="footer" style="background: url('img/footer.svg') 50% 50% / cover no-repeat;">
