@@ -6,8 +6,7 @@
     <title>Qubo - Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="icon" href="img/favicon.png" size="32x32" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.0-alpha.32/swiper-bundle.min.css" integrity="sha512-xyGU5VwrDSQBptOWTSrDKXwwQEg0s3nysq75mxSesWNezlS+1VVBgQQF4wJzHIsUyT+Yw1M5v5vOqitzKSXb8w==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
@@ -58,13 +57,15 @@
 
         <div class="video-section" style="background: url('img/hero2.svg') 50% 50% / cover no-repeat">
             <div class="container video-section__container">
-                <a data-fslightbox="gallery" href="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" class="video-poster" style="background: url('img/video-poster.jpg') 50% 50% / cover no-repeat;">
+                <a data-fslightbox
+                    href="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                    class="video-poster" style="background: url('img/video-poster.jpg') 50% 50% / cover no-repeat;">
                     <button class="icon-play">
-                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="40" cy="40" r="39.5" fill="white" stroke="white"/>
-                                <path d="M36 33V47L47 40L36 33Z" fill="#49745B"/>
-                            </svg>
-                        </button>
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="40" r="39.5" fill="white" stroke="white" />
+                            <path d="M36 33V47L47 40L36 33Z" fill="#49745B" />
+                        </svg>
+                    </button>
                 </a>
             </div>
         </div>
@@ -73,7 +74,9 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Stări cu care te poți confrunta</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat</p>
                 </div>
                 @@include('components/stateSlider.html')
             </div>
@@ -90,7 +93,9 @@
                 <div class="recomandation-section__content">
                     <div class="section-header">
                         <h2>Recomandări pentru o stare de bine</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat</p>
                     </div>
                     <div class="recomandation-section__mascota--mobile">
                         <img src="img/mascota.svg" alt="mascota">
@@ -101,7 +106,8 @@
                                 <div class="slider-recomandation__body swiper">
                                     <div class="slider-recomandation__slide">
                                         <a href="#">
-                                            <img src="img/recomandari1.jpg" alt="Recomandări despre cum să interacționați mai bine cu oamenii">
+                                            <img src="img/recomandari1.jpg"
+                                                alt="Recomandări despre cum să interacționați mai bine cu oamenii">
                                         </a>
                                         <a href="#">
                                             <h6>Recomandări despre cum să interacționați mai bine cu oamenii</h6>
@@ -109,7 +115,8 @@
                                     </div>
                                     <div class="slider-recomandation__slide">
                                         <a href="#">
-                                            <img src="img/recomandari2.jpg" alt="Recomandări despre cum să te simți mai bine">
+                                            <img src="img/recomandari2.jpg"
+                                                alt="Recomandări despre cum să te simți mai bine">
                                         </a>
                                         <a href="#">
                                             <h6>Recomandări despre cum să te simți mai bine</h6>
@@ -117,7 +124,8 @@
                                     </div>
                                     <div class="slider-recomandation__slide">
                                         <a href="#">
-                                            <img src="img/recomandari1.jpg" alt="Recomandări despre cum să interacționați mai bine cu oamenii">
+                                            <img src="img/recomandari1.jpg"
+                                                alt="Recomandări despre cum să interacționați mai bine cu oamenii">
                                         </a>
                                         <a href="#">
                                             <h6>Recomandări despre cum să interacționați mai bine cu oamenii</h6>
@@ -125,7 +133,8 @@
                                     </div>
                                     <div class="slider-recomandation__slide">
                                         <a href="#">
-                                            <img src="img/recomandari2.jpg" alt="Recomandări despre cum să te simți mai bine">
+                                            <img src="img/recomandari2.jpg"
+                                                alt="Recomandări despre cum să te simți mai bine">
                                         </a>
                                         <a href="#">
                                             <h6>Recomandări despre cum să te simți mai bine</h6>
@@ -136,19 +145,27 @@
                                 <div class="slider-recomandation-controls">
                                     <div class="slider-recomandation-controls__arrows slider-arrows">
                                         <button type="button" class="slider-arrow slider-arrow__prev">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle r="24.5" transform="matrix(-1 0 0 1 25 25)" fill="white" stroke="#CCDEDB"/>
-                                                    <path d="M27.8416 28.825L24.0249 25L27.8416 21.175L26.6666 20L21.6666 25L26.6666 30L27.8416 28.825Z" fill="#294133"/>
-                                                </svg>
-                                            </button>
+                                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle r="24.5" transform="matrix(-1 0 0 1 25 25)" fill="white"
+                                                    stroke="#CCDEDB" />
+                                                <path
+                                                    d="M27.8416 28.825L24.0249 25L27.8416 21.175L26.6666 20L21.6666 25L26.6666 30L27.8416 28.825Z"
+                                                    fill="#294133" />
+                                            </svg>
+                                        </button>
                                         <button type="button" class="slider-arrow slider-arrow__next">
-                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="25" cy="25" r="24.5" fill="white" stroke="#CCDEDB"/>
-                                                    <path d="M22.1584 28.825L25.9751 25L22.1584 21.175L23.3334 20L28.3334 25L23.3334 30L22.1584 28.825Z" fill="#294133"/>
-                                                </svg>
-                                            </button>
+                                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="25" cy="25" r="24.5" fill="white" stroke="#CCDEDB" />
+                                                <path
+                                                    d="M22.1584 28.825L25.9751 25L22.1584 21.175L23.3334 20L28.3334 25L23.3334 30L22.1584 28.825Z"
+                                                    fill="#294133" />
+                                            </svg>
+                                        </button>
                                     </div>
-                                    <a href="#" class="slider-recomandation-controls__more btn-outline">Vezi toate recomandarile</a>
+                                    <a href="#" class="slider-recomandation-controls__more btn-outline">Vezi toate
+                                        recomandarile</a>
                                 </div>
                             </div>
                         </div>
@@ -169,7 +186,9 @@
                 <div class="story-section__content">
                     <div class="section-header">
                         <h2>Istoriile voastre</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat</p>
                     </div>
                     <div class="mobile-illustration">
                         <img src="img/illustration1.svg" alt="ilustratie">
@@ -193,49 +212,68 @@
                             <div class="slider-resurces-controls">
                                 <div class="slider-resurces-controls__arrows slider-arrows">
                                     <button type="button" class="slider-arrow slider-arrow__prev">
-                                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle r="24.5" transform="matrix(-1 0 0 1 25 25)" fill="white" stroke="#CCDEDB"/>
-                                                <path d="M27.8416 28.825L24.0249 25L27.8416 21.175L26.6666 20L21.6666 25L26.6666 30L27.8416 28.825Z" fill="#294133"/>
-                                            </svg>
-                                        </button>
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle r="24.5" transform="matrix(-1 0 0 1 25 25)" fill="white"
+                                                stroke="#CCDEDB" />
+                                            <path
+                                                d="M27.8416 28.825L24.0249 25L27.8416 21.175L26.6666 20L21.6666 25L26.6666 30L27.8416 28.825Z"
+                                                fill="#294133" />
+                                        </svg>
+                                    </button>
                                     <button type="button" class="slider-arrow slider-arrow__next">
-                                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="25" cy="25" r="24.5" fill="white" stroke="#CCDEDB"/>
-                                                <path d="M22.1584 28.825L25.9751 25L22.1584 21.175L23.3334 20L28.3334 25L23.3334 30L22.1584 28.825Z" fill="#294133"/>
-                                            </svg>
-                                        </button>
+                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="25" cy="25" r="24.5" fill="white" stroke="#CCDEDB" />
+                                            <path
+                                                d="M22.1584 28.825L25.9751 25L22.1584 21.175L23.3334 20L28.3334 25L23.3334 30L22.1584 28.825Z"
+                                                fill="#294133" />
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
                             <div class="slider-resurces__body swiper">
                                 <div class="slider-resurces__slide">
-                                    <img src="img/resurce1.jpg" alt="The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma">
+                                    <img src="img/resurce1.jpg"
+                                        alt="The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma">
                                     <div class="resurce-slide__content">
-                                        <h5>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma</h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                        <h5>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma
+                                        </h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. </p>
                                         <a href="#" download="">Descarca PDF</a>
                                     </div>
                                 </div>
                                 <div class="slider-resurces__slide">
-                                    <img src="img/resurce2.jpg" alt="The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma">
+                                    <img src="img/resurce2.jpg"
+                                        alt="The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma">
                                     <div class="resurce-slide__content">
-                                        <h5>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma</h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                        <h5>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma
+                                        </h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. </p>
                                         <a href="#" download="">Descarca PDF</a>
                                     </div>
                                 </div>
                                 <div class="slider-resurces__slide">
-                                    <img src="img/resurce1.jpg" alt="The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma">
+                                    <img src="img/resurce1.jpg"
+                                        alt="The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma">
                                     <div class="resurce-slide__content">
-                                        <h5>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma</h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                        <h5>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma
+                                        </h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. </p>
                                         <a href="#" download="">Descarca PDF</a>
                                     </div>
                                 </div>
                                 <div class="slider-resurces__slide">
-                                    <img src="img/resurce2.jpg" alt="The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma">
+                                    <img src="img/resurce2.jpg"
+                                        alt="The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma">
                                     <div class="resurce-slide__content">
-                                        <h5>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma</h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                        <h5>The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma
+                                        </h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. </p>
                                         <a href="#" download="">Descarca PDF</a>
                                     </div>
                                 </div>
@@ -255,10 +293,13 @@
                     <div class="section-header">
                         <h2>Despre campanie</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
                         </p>
                     </div>
                     <div class="mascota-mobile">
@@ -281,7 +322,8 @@
 
     @@include('components/footer.html')
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.0-alpha.32/swiper-bundle.min.js" integrity="sha512-MD6GpAIaTlkwL/QmIlZiUxTK+Zb6T8sg+5CBaimCCwIIxOAebAVTGy3NUyJgYLVwjasLYMEzNMQpeB9XISr8vA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/fslightbox.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

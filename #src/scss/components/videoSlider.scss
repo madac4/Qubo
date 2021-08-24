@@ -2,6 +2,7 @@
     .video-slider__body {
         position: relative;
         .video-slider__slider {
+            overflow: hidden;
             .slider-video__body {
                 .slider-video__slide {
                     a {

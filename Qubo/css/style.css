@@ -427,6 +427,16 @@ form button:active {
   margin-bottom: 20px;
 }
 
+.slider-controls__dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
 .slider-controls__dots .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
@@ -614,7 +624,7 @@ form button:active {
   width: 100%;
   height: 120vh;
   position: relative;
-  z-index: 8;
+  z-index: 9;
 }
 
 .hero-section .hero-container {
@@ -673,7 +683,7 @@ form button:active {
           transform: translateY(-40px);
   position: relative;
   margin-bottom: -40px;
-  z-index: 7;
+  z-index: 8;
 }
 
 .video-section__container {
@@ -1898,6 +1908,10 @@ form button:active {
 
 .page__video-slider .video-slider__body {
   position: relative;
+}
+
+.page__video-slider .video-slider__body .video-slider__slider {
+  overflow: hidden;
 }
 
 .page__video-slider .video-slider__body .video-slider__slider .slider-video__body .slider-video__slide a {
